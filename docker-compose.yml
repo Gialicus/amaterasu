@@ -1,0 +1,9 @@
+services:
+  pocketbase:
+    image: elestio/pocketbase
+    restart: always
+    user: 0:0
+    ports:
+      - 8090:8090
+    volumes:
+      - ./data:/pb_data
