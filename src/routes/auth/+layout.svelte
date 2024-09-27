@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section>
-	<h1>Auth</h1>
+<main class="flex h-screen w-screen flex-col bg-base-100">
 	<slot />
-</section>
+	<footer class="bg-base-200 text-center">AUTH FOOTER</footer>
+</main>

@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  startup:
+    cmds:
+      - docker compose up -d --build
+      - npm run dev
+    silent: true
+
+  shutdown:
+    cmds:
+      - docker compose down
+    silent: true
